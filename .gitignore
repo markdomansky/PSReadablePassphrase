@@ -1,1 +1,2 @@
-/_PublishModule.ps1
+/releases
+/tests/config.json
