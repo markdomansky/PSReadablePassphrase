@@ -18,4 +18,4 @@ robocopy /mir $srcpath $targetpath
 #publish-module -name $name -nugetapikey $apikey -repository PSGallery
 #-path "C:\Dropbox\Scripts\VB.NET\WebJEA\WebJEAConfig\Module"
 #
-publish-module -path $targetpath -NuGetApiKey $config.apikey -Verbose -Repository PSGallery -whatif
+publish-module -path $targetpath -NuGetApiKey $config.apikey -Repository PSGallery
