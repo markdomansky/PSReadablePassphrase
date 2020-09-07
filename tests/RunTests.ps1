@@ -16,7 +16,7 @@ $sb = {
     $psdinfo = Import-PowerShellDataFile -Path ..\module\PSReadablePassphrase.psd1
     [system.version]$ver = $psdinfo.ModuleVersion
     $newver = [system.version]::new($ver.major,$ver.min,$ver.build+1)
-    Update-ModuleManifest -Path ..\module\PSReadablePassphrase.psd1 -ModuleVersion $newver
+    Update-ModuleManifest -Path $rootpath\..\module\PSReadablePassphrase.psd1 -ModuleVersion $newver
     write-host -ForegroundColor cyan "New Version: $newver"
 
     #run tests

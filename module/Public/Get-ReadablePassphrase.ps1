@@ -156,7 +156,6 @@ Optional. Switch. Returns the password as a securestring rather than plain text.
         if ($AlternateDefault)
         {
             Write-Verbose "Setting Alternate Defaults"
-            if (-not $PSBoundParameters.ContainsKey("Count")) { $Count = 5 }
             if (-not $PSBoundParameters.ContainsKey("MinLength")) { $MinLength = 20 }
             if (-not $PSBoundParameters.ContainsKey("MaxLength")) { $MaxLength = 30 }
             if (-not $PSBoundParameters.ContainsKey("Strength")) { $Strength = "Custom" }
